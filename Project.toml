@@ -1,0 +1,8 @@
+name = "FindComplexZeros"
+uuid = "0a534ecb-6644-4a7e-8523-fc75d3442ec4"
+authors = ["Wang Yanhua <yanhua@u.yale-nus.edu.sg>"]
+version = "0.1.0"
+
+[deps]
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
