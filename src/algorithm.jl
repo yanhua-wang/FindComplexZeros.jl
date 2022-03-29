@@ -179,7 +179,7 @@ Each line of result contains the upper left, lower right corner of the rectangul
 - `upper_left`: a complex number that is the upper left corner of rectangular domain 
 - `lower_right`: a complex number that is the lower right corner of rectangular domain 
 - `f::Function`: the function
-- `err=0.01`: error of the location of each zero 
+- `err=0.001`: error of the location of each zero 
 - `increment=err/100`: step size of the `countZeros` function
 - `dif=0.5`: when the difference between ``arg(f(z))`` at 2 consecutive points of
 evaluation by the `countZeros` function is greater than `2pi-dif`, a jump point is registered
@@ -192,7 +192,7 @@ julia> function exp_sum(x)
 end
 exp_sum (generic function with 1 method)
 
-julia> findZerosWithSubdivision(-10 + 10im, 10 - 10im, exp_sum)
+julia> findZerosWithSubdivision(-10 + 10im, 10 - 10im, exp_sum, 0.01)
 7-element Vector{Tuple{Any, Any}}:
  (0.859375 - 3.0859375im, 0.869140625 - 3.095703125im)
  (0.859375 - 9.375im, 0.869140625 - 9.384765]625im)
@@ -203,7 +203,7 @@ julia> findZerosWithSubdivision(-10 + 10im, 10 - 10im, exp_sum)
  (-0.068359375 - 4.287109375im, -0.05859375 - 4.296875im)
 ```
 """
-function findZerosWithSubdivision(upper_left, lower_right, f::Function, err=0.01, increment = err/100, dif=0.5)
+function findZerosWithSubdivision(upper_left, lower_right, f::Function, err=0.001, increment = err/100, dif=0.5)
     q = Queue{Tuple{Tuple{Any,Any},Any}}()
     init = Array{Tuple{Any,Any}}(undef, 0)
     locations = findZerosWithSubdivisionAux(upper_left, lower_right, f::Function, dif, q, init, err, increment)
