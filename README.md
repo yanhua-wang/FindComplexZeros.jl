@@ -2,6 +2,8 @@
 
 This package uses a discretised version of the argument principle to find regions containing zeros of a function.
 
+![an exponential sum](./graphics/an_exp_sum.png)
+
 ## Installing the package
 
 ```julia
@@ -53,7 +55,3 @@ Further documentation can be accessed at the REPL or in IJulia by typing ? follo
 ## Related packages
 
 [ComplexPortraits.jl](https://github.com/luchr/ComplexPortraits.jl) Phase portraits for complex functions (helpful for visualising where the zeros are)
-
-## Further resources
-
-This project is part of Wang Yanhua's final year capstone project at Yale-NUS College, Asymptotic Locus of Zeros of Exponential Sums. If you have any questions, drop a message to yanhua [at] u.yale-nus.edu.sg.
