@@ -2,7 +2,7 @@
 
 This package uses a discretised version of the argument principle to find regions containing zeros of a function.
 
-![an exponential sum](./graphics/an_exp_sum.png)
+![an exponential sum](https://user-images.githubusercontent.com/42966414/160807046-31cc6d57-d05d-4e67-80e8-074cdfa4faeb.png)
 
 ## Installing the package
 
