@@ -1,6 +1,6 @@
 # Find complex zeros of a function
 
-This package uses a discretised version of the argument principle to find regions containing zeros of a function.
+This package uses a discretised version of the argument principle to find regions containing zeros of an analytic function.
 
 ![an exponential sum](https://user-images.githubusercontent.com/42966414/160807046-31cc6d57-d05d-4e67-80e8-074cdfa4faeb.png)
 
